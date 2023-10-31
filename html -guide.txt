@@ -1,0 +1,152 @@
+tags
+    1. input tags
+    2. output tags
+    3. block level tags
+    4. inline tags
+    5. dependent tags
+    6. independent tag / self close tag
+    -------------------------------------------
+    what are valid file extension in html?
+    .html
+    .htm
+    note- .html is more SEO friendly
+    --------------------------------------------
+    what is the basic structure of html document?
+    =>html- html start to end is called document
+    => head
+        -> digital marketing
+        ->library section (css ,js, bootstrap.....)
+
+    => body
+        ->content with suitable html tags
+    --------------------------------------------------
+    h1 to h6 -  it is called heading tag 
+                it use to create headline in web page
+                every page h1 is required 1 time for better user exprience
+                *file name example - pagen.html
+    -----------------------------------------------------------------------
+    -> About output tags
+        => what are types of list in html
+            1. OL - ORDER LIST = NUMBERING IN MS WORD - * file name example Order list.html
+                type="1" it is by default
+                type="a"
+                type="A"
+                type="i"
+                type="I"
+
+            2. UL - UNORDER LIST = BULLETS IN MS WORD - *file name example - unorderlist.html
+                type="disk" it is by default
+                type="square"
+                type="circle"
+                type="none"
+            => nested list - * file name example - nestedlist.html
+                list inside list
+                as
+                  ui =>li => ul =>li(continue the same pattern)
+            3. DL - DEFINATION LIST - * file name example - definatio_list.html
+                    -> dt - defination title - it use to display the head line of content / title of content
+                    -> dd - defination details - it is use to display details of content
+    -----------------------------------------------------------------------
+    -> how to link the pages in html ?
+        <a herf="" target="" title="" id="" class=""> text to cick </a>
+        a = it is a tag name
+        herf = it is a property of a tag, it stablish link from current file to other file
+        target = it define the location for next file that where it should open
+        title = it explain about the link to google search engine
+        id + class = it connect with css and javascript
+
+        *file name example
+        link1.html
+        link2.html
+
+-------------------------------------------------------------------------------------------------------------------
+    -> type of target
+        target="_self"  - it open next page in same tab (it is default target)
+        target="_new"    -it open next page in new tab ( but only at first click)
+        target="_blank"  -it open nextbpage in new tab (but every click)
+
+        *file name example 
+        page1.html
+        page2.html
+
+        ------using js-------  
+        target="_child"
+        target="_parent"
+
+
+        ------using html frameset---------
+        target="userdefined"
+
+    -----------------------------------------------------------------------------------------------------------------------
+    Table in html
+        1. Method -
+            structure
+        => Table
+            -> caption
+            => target   
+                ->th - table heading
+                ->td - table data
+        
+        2. method -
+            structure
+        => Table
+            =>thead - it is the upper part of table
+                -> tr
+                    ->th
+            =>tbody - it is the middle part of table
+                -> tr
+                    ->td
+            =>tfoot - it is the bottam part of table
+                ->tr
+                    ->th
+    ----------- List of property in table , tr, th , td ----------
+    -> Align (left, center, right)
+    -> border
+    -> cellpadding - it is apply space inside th, td
+    -> cellspacing - it apply space outside of th, td
+
+    => *file name eaxmple - table1.html
+    
+    -> bordercolor
+    -> bgcolor
+    -> height
+    -> width
+    -> colspan - it is use to combine space of 2 or more th & td
+    -> rowspan - it is use to combine space of 2 or more tr
+    *file name example - table2.html,table3.html
+    ----------------------------------------------------------------------
+    => List of in-put tags
+        1-> text- to ask 1 line alph numeric input from user
+        2-> Number - to ask 1 line numeric input from user
+        3-> email - to ask 1 line input in form of email from user
+        4-> password - to ask secure 1 line input from user
+        5-> select- to chose from given option
+        6-> textarea - to ask multiline input from user 
+        7-> checkbox- to choose 1 or more from given option
+        8-> radio - to chose only one from given option
+        9-> date - to select a date
+        10-> datetime-local - to select date with local time zone
+        11-> file - to upload any type of file
+        12-> button - for action
+            => submit - it submit from data to server
+            => reset -to clear / reset the current form
+            => button - it work with javascript
+        *file name example - form1.html
+        ----------------------------------------------------------------------------------------
+        List of Property in input elements
+            -> placeholder - it is for input guidance
+            -> maxlenght - it set limit of input - text, email, password, textarea
+            -> size - it reset with of - rext, email , password
+            -> tabindex - it set sequence for cursor pointer
+            -> value - it is use to display default value
+            -> readonly - it set input element to read only
+        form
+            -> action - it use to set the backend url where form data will get submitted.
+            -> method - it use to define the type of communication ( secure of unsecure )
+                    get and post both use to communicate with server with data
+                          1. GET - it pass data from clint to server via browser url
+                                   the dta in url will be fully visible so it is unsecure
+                          2. post - it pass from clint to server in hidden + encoded mode 
+                                    the data will be non visible so fully secure communication
+            -> enctype - it encode the file data before uploading enctype="multipart/form-data"
+        ------------------------------------------------------------------------------------

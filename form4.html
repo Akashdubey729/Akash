@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <body bgcolor="skyblue">
+        <table align="center" cellpadding="12">
+            <tr>
+                <th> <a href="form2.html"> contact Us </a></th>
+                <th> <a href="form3.html"> Login </a></th>
+                <th> <a href="form4.html"> Creat Account </a></th>
+                <th> <a href="form5.html"> Enquiry </a></th>
+                <th> <a href="form6.html"> My Users </a></th>
+            </tr>
+        </table>
+        <hr color="grey" size="5">
+        <form action="registor.php" method="post">
+            <table align="center" cellpadding="15">
+                <caption>
+                    <h1> Create a New Account </h1>
+                </caption>
+                <tr>
+                    <th> First Name </th>
+                    <td> <input  type="text" placeholder="Enter First Name " tabindex="1"/></td>
+                    <th> Last Name </th>
+                    <td> <input  type="text" placeholder="Enter Last Name " tabindex="3"/></td>
+                </tr>
+                <tr>
+                    <th> E-mail Id </th>
+                    <td colspan="4"><input type="email" placeholder=" Enter Email" size="75" tabindex="2"/></td>
+                </tr>
+                <tr>
+                    <th> Password </th>
+                    <td> <input type="password" placeholder="Enter Password" tabindex="4"/></td>
+                    <th> Confirm Password</th>
+                    <td> <input type="password" placeholder="Confirm Password" tabindex="5"/></td>
+                </tr>
+                <tr>
+                    <th> Mobile No </th>
+                    <td> <input type="number" placeholder="Enter Mobile No "/></td>
+                    <th> City Name </th>
+                    <td> 
+                        <select>
+                            <option>-----choose-----</option>
+                            <option> Bhubanaswar </option>
+                            <option> Bangalore </option>
+                            <option> Pune </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th> Full Address </th>
+                    <td colspan="3"> <textarea placeholder="Enter address" cols="70" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <th colspan="4">
+                        <button type="submit" tabindex="6"> Registor Now </button>
+                        <button type="reset"> Clear All</button>
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
